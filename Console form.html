@@ -1,0 +1,198 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->  
+<style>
+.navbar{
+    width: 1200px;
+    height: 170px;
+    margin: auto;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 122px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:blue;
+}  
+body{  
+  font-family:calibri;  
+  background-image: url(images/PS5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width:100vh;
+ 
+
+  }  
+.container { 
+  border:ridge;
+  border-color: black;
+  background-color:white;
+  border-radius: 10px; 
+  padding: 50px;  
+  margin-left: 900px;
+  width:700px;
+  margin-top: 50px;
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 7px 7px black;
+}
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border:solid 1px;  
+  background: #f1f1f1;
+  border-radius: 10px;
+  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color:gold;  
+  outline: none;
+  border-radius: 10px;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid black;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border:solid 1px;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9; 
+  border-radius: 45px; 
+  text-align: center;
+  border-color: black;
+  box-shadow: 7px 7px black;
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+} 
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:purple;
+} 
+h1:hover{
+  color:lime;
+
+}
+</style>  
+</head>  
+<body> 
+ <form>  
+  <div class="container">  
+  <center>  <h1>CONSOLE GAME APPLICATION FORM</h1> </center>
+  <hr>
+  <div class="navbar">
+    <div class="menu">
+      <ul>
+          <li><a href="http://127.0.0.1:5500/Forms/Pc%20form.html">PC</a></li>
+          <li><a href="http://127.0.0.1:5500/Forms/Mobile%20form.html">MOBILE</a></li>
+          <li><a href="http://127.0.0.1:5500/Forms/Console%20form.html">CONSOLE</a></li>
+      </ul>
+  </div>
+  </div>
+<label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<br>
+<label>   
+  CONSOLE:  
+  </label>   
+  <select>  
+  <option value="FORTNITE">FORTNITE</option>  
+  <option value="PUBG">PUBG</option>  
+  <option value="FALL GUYS">FALL GUYS</option>  
+  </select>  
+<br>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>
+<br>  
+<label>   
+Phone :  
+</label>  
+<input  name="country code" placeholder="Country Code"  value="+91" size="2"/>
+<br>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required><br>   
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>
+<br> 
+<label for="DOB"><b>Date of Birth:</b></label>  
+ <input type="date" placeholder="Date of Birth" name="Date of Birth" required>
+ <br>
+ <br>
+ <label for="email"><b>How long have you been in the server?</b></label>  
+ <input type="text" placeholder="Server Update" name="Server" required>
+ <label for="character"><b>Tell us about your In game character.</b></label>  
+ <input type="text" placeholder="Character" name="Character" required>
+ <br> 
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+ <br> 
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  <br>
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+    <br>
+    <div>  
+      <label>   
+      Payment Options :  
+      </label><br>  
+      <input type="radio" value="Other UPI IDs/Net Banking" name="Payment" checked > Other UPI IDs/Net Banking  
+      <input type="radio" value="Google Pay" name="Payment">Google Pay  
+      <input type="radio" value="Patym" name="Payment"> Patym 
+      </div>
+      <br>
+      <label for="Wallet"><b>Wallet or Promo Code:</b></label>
+ <input type="text" placeholder="Enter Wallet code" name="Wallet" required>
+ <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html> 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <style>
+        .border{
+            border: ridge;
+            height:100px;
+            width: 1000px;
+            border-radius: 10px;
+            box-shadow: 7px 7px black;
+            border-color: black;
+            background-color:darkblue;
+            /* margin-left: 800px; */
+            margin: auto;
+            /* margin-top: 30px; */
+            text-align: center;
+            color:white;
+            font-size: 30px;
+            padding: 25px ;
+            line-height:10px;
+            cursor: pointer;
+        }
+        .head{
+            font-size: 70px;
+            color:#7617B9;
+            text-align: center;
+        }
+        .form{
+            border:ridge;
+            height:max-content;
+            width:1800px;
+            border-radius: 10px;
+            border-color: black;
+            box-shadow: 7px 7px black;
+            /* margin-left: 500px; */
+            margin: auto;
+            background-color: #da7bff;
+        }
+
+input[type=text], textarea {
+    height:50px;  
+  width:700px;  
+  padding: 15px;  
+  margin-top: 50px;  
+  margin-left: 100px;
+  display: inline-block;  
+  border:ridge 3px;  
+  background: #f1f1f1;
+  border-radius: 10px;
+  border-color: black;
+  font-size: 30px;
+        }
+        .Tellus{
+            text-align: center;
+        
+        }
+        button{
+            border: ridge;
+            border-radius: 10px;
+            border-color: black;
+            background-color: blue;
+            padding:30px 50px;
+            box-shadow: 6px 6px black;
+            margin-left: 900px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 2s;
+            color: white;
+            font-weight: bold;
+
+        }
+        button:hover{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div  class="border">
+<h1>CONTACT US</h1>
+    </div>
+    <div class="head">
+        <h2>TELL US WHAT'S ON YOUR MIND!</h2>
+    </div>
+    <div class="form">
+        <form>
+            <div class="containner">
+                <input type="text" name="firstname" placeholder= "Firstname" size="15">
+                <input type="text" name="lastname" placeholder="Lastname" size="15"> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="text" name="phone" placeholder="Phone no." size="10">
+                <input type="text" placeholder="Enter Email" name="email" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="Tellus">
+                    <textarea cols="80" rows="10" placeholder="Tellus" value="address" required></textarea>
+                </div>
+                <div class="button">
+                    <button>SEND</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,534 @@
+<html>
+    <head>
+        <!--TITLE TAG-->
+    
+       <title>EVENTS</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        .navbar {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    body
+                span{
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                .table{
+                    background-color:lightblue;
+                    border-radius: 20px;
+                    border-color: transparent;
+                    box-shadow: 7px 7px black;
+                    cursor: pointer;
+                    color:white;
+                    margin:0px 20px;
+            
+            
+                    }
+                    .table:hover{
+                        background-color:lightcyan;
+                        color:lime;
+                    }
+                    .Regis button{
+                        border: ridge;
+                        background-color:orangered;
+                        border-radius: 10px;
+                        border-color:transparent;
+                        padding: 15px;
+                        box-shadow: 5px 5px black;
+                        cursor: pointer;
+                        transition: 2s;
+                    }
+                    .Regis button:hover{
+                        background-color: green;
+
+                    }
+                .heading{
+                    text-align: center;
+                    padding: 50px;
+                }
+                .all{
+                    text-align:center;
+                    padding: auto;
+                }
+                .info{
+                   border:ridge;
+                   border-color:black;
+                   height:400px;
+                   width:700px;
+                   border-radius: 10px;
+                   box-shadow: 7px 7px black;
+                   /* margin-left: 900px; */
+                   margin: auto;
+                }
+                .info button{
+                    border:ridge;
+                   border-color:black;
+                   height:fit-content;
+                   width:fit-content;
+                   border-radius: 10px;
+                   box-shadow: 7px 7px black;
+                   padding:20px;
+                   margin-left:250px ;
+                   margin-top: 30px;
+                   background-color: orangered;
+                   cursor: pointer;
+                   transition: 2s;
+                
+
+                }
+                .info button:hover{
+                    background-color: green;
+                }
+                .info a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color:black;
+                }
+                .info2 button{
+                    border:ridge;
+                   border-color:black;
+                   height:fit-content;
+                   width:fit-content;
+                   border-radius: 10px;
+                   box-shadow: 7px 7px black;
+                   padding:20px 50px;
+                   margin-left:250px ;
+                   margin-top: 50px;
+                   background-color: orangered;
+                   cursor: pointer;
+                   transition: 2s;
+                
+
+                }
+                .info2 button:hover{
+                    background-color: green;
+                }
+                .info2 a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color:black;
+                }
+                .info3 button{
+                    border:ridge;
+                   border-color:black;
+                   height:fit-content;
+                   width:fit-content;
+                   border-radius: 10px;
+                   box-shadow: 7px 7px black;
+                   padding:20px 60px;
+                   margin-left:250px ;
+                   margin-top: 50px;
+                   background-color: orangered;
+                   cursor: pointer;
+                   transition: 2s;
+                
+
+                }
+                .info3 button:hover{
+                    background-color: green;
+                }
+                .info3 a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color:black;
+                }
+    .pops{
+        display:flex;
+        justify-content: center;
+    }
+    input{
+        height: 50px;
+        width:150px;
+        cursor: pointer;
+        position: relative;
+    }
+    input::before{
+        content:"OPEN";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #790ff7;
+        box-shadow: 0px,20px,20px,rgba("0,0,0,0.097");
+        color: white;
+        border-radius: 10px;
+
+    }
+    .popup{
+        position: absolute;
+        height:150px;
+        width: 250px;
+        background-color: #790ff7 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        z-index: 10px;
+        clip-path: polygon(0 50%,100% 50%,100% 50%,0 50%);
+        transition: 1s;
+    }
+    p{
+        font-size: 1em;
+        margin:15px;
+    }
+    label{
+        width:100px;
+        height:50px;
+        background-color: white;
+        color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow:0px,20px,20px,rgba("0,0,0,0.097");
+       cursor: pointer;
+
+    }
+    input:checked~ .popup{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+
+    }
+    h2{
+    color: red;
+  animation-name: name;
+  animation-duration: 4s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+    }
+    @keyframes name {
+0%   {color:red; left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:blue; left:200px; top:200px;}
+  75%  {color:green; left:0px; top:200px;}
+  100% {color:red; left:0px; top:0px;}
+}
+.table-down{
+
+margin:20px;
+text-align: center;
+}
+    
+
+
+</style>
+    </head>
+  
+       
+    <body onload="myFunction()">
+        
+            
+    
+    <!--HEADING TAG-->
+
+<p>
+    <!--FONT TAGS-->
+<div class="pops">
+    <input type="checkbox" id="button">
+    <div class="popup">
+        <p>
+           <b>WELCOME</b>
+        </p>
+        <label for="button">CLOSE</label>
+    </div>
+    </div>
+    <font face="algerian" color="blue">
+    <div class="heading">
+        <h1>GAMES <font color="red">REGISTRATION </font>EVENTS:</h1>
+        </font>
+    </div>
+
+        <font face="algerian" color="blue">
+       <marquee behavior="alternate" direction="left"> <h2>!----WELLCOME YOU ALL----!</h2></font></marquee>
+      <br />
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">PC</a>
+        <div class="dropdown">
+          <button class="dropbtn">MOBILE 
+            <i class="drop-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">FREE-FIRE</a>
+            <a href="#">PUBG</a>
+            <a href="#">CALL OF DUTY</a> 
+          </div>
+        </div>
+      </div> 
+     
+      
+      
+      <!--SCRPITS Onload-->
+      <script>
+        function myFunction() {
+          alert("Welcome to Event Registration Page");
+        }
+        </script>
+        
+      
+        
+      <br />
+      <br />
+      
+      
+      <div class="heading">
+       <font face="calibri" color="black" size="4">
+        <p align="justify">
+
+            <b>Hosting</b> an eSports tournament? No matter the game, level up your online registration process with our free Gaming Tournament Registration Form! Teams or individual players can submit their registration information, such as name, email address, and logo, before selecting their game of choice. Submissions will be received instantaneously and accessible in Jotform Tables, an all-in-one workspace you can view as a spreadsheet, calendar, or easy-to-read cards.
+
+Customize your Gaming Tournament Registration Form in just a few clicks. No coding required when using our Form Builder — just drag and drop to add form fields, change the background image, upload your tournament logo, and more. This template is also preformatted with conditional logic to reveal different form fields for teams and individual registration. Power up your form even further with our advanced form widgets — including Twitch — or our 100+ app integrations, such as Google Drive, Airtable, Slack, and Discord. Join the big leagues with a professional Gaming Tournament Registration Form. Let the games begin!
+
+        </font>
+   
+</p>
+</div>
+<br />
+
+
+    <form>
+    <div class="Regis">
+        <p align="center"><button><font face="castellar" color="black"><b>REGISTRATION</b></font></button></p>
+</div>
+    </form>
+
+     <div class="table">
+
+    <table cellpadding="20px" cellspacing="20px" >
+        <tr>
+    
+        <th>ABOUT GAMES</th>
+        <th>TAKE PART IN GAMES</th>
+        <th>ORGANISE A GAMES</th>
+        <th>COMMUNITY GAMES</th>
+
+        </tr>
+    
+    </p>
+    <p >
+        <tr>
+            <td> <font face="calibri">A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback.</font></td>
+            <td> <font face="calibri">Comprehensive list of synonyms for computer and video games and games played on ... a game you play on a computer in which you take part in an adventure</font></td>
+            <td> <font face="calibri">Lack of board game storage can make putting away the favorite game after family game night no fun at all! My family loves playing board games and we have a ton of board games. The problem is storing all those board game pieces and card games in an orderly manner. This list can help you store your board game collection in a way that your favorite game is always easy to find.</font></td>
+            <td> <font face="calibri">For Xbox Live Community Games, see Xbox Live Community Games.<br>
+                Aldi Community Games is an Irish independent voluntary organisation and National Governing Body providing opportunities for children and young people to grow and develop in a positive and healthy way while experiencing a wide range of sporting and cultural activities. The National Festivals are held over 2 weekends every year, where between 3 and 4,000 children compete for their area, town, county and province. Aldi Community Games is sponsored by Aldi.</font></td>
+        
+        </tr>
+        
+    </table>
+</div>
+    <!---LIST TAGS-->
+
+    <div class="table-down">
+    <h3><font face="Tiro bangla" color="purple"  >TOURNAMENT PLATFORM ANNOUNCEMENT:</h3>
+    
+    </font>
+</div>
+
+    <div class="all">
+    <p>
+        <font face="arial" color="black">
+    
+<ul><pre>
+    <li>Your gaming profile has become more compact — now focus on the essentials</li>
+    <li>We added new disciplines to the web-platform: <b>FIFA</b> and <b>PES.</b></li>
+    <li>Now in some tournaments the matches will start according to the schedule, so that you know exactly when you have a game</li>
+    <li>We have added Primal Beast, Marci, and Hoodwink to the voting in <b>Dota 2</b> 1v1 mode</li>
+    <li>For <b>LoL</b> 1v1 mode, all heroes are now available, too.</li>
+    <li>Play your favorite fighting games: <b>Mortal Kombat, Street Fighter, Tekken 7, SSBU</b> — all with easy access to the platform from your PC.</li></pre>
+</ul>
+<br>
+<br>
+<img src="images2/Massive.png" height="320" width="716">
+<br>
+<br>
+<br>
+<hr />
+<h3> <font face="arial black" color="royal blue">Party hard: join 5v5 and 2v2 tournaments even without a team</font></h3>
+<p>
+    <pre>
+    7:30 PM – November 17, 2021</pre>
+
+    The tournament starts soon, but you still have no team? No big deal. Join 5v5 and 2v2 tournaments as a solo-player, and we’ll create a party for you and try to form a 5-stack consisting of lone wolves just like you. Also, you can invite your friends to the party. For more info, <a href="https://weplayhelp.zendesk.com/hc/en-us/articles/4410662969361-How-to-join-2x2-or-5x5-tournaments"><font color="skyblue">read our guide.</font></a><br><br>
+
+<img src="images2/Stacks.png" height="320" width="716">
+<br>
+<hr>
+<br>
+
+<h4>Other updates:</h4>
+<ul>
+    <li>Tournament page has a new design. We added tabs and rearranged some other elements — the page looks cleaner now.</li><br>
+    <li>Added a button to link your LoL account in your gaming profile</li><br>
+    <li>Fixed player validation in a tournament</li><br>
+    <li>When you send a team invite link to another person, they will open a website with the same language chosen as you had when creating a link</li><br>
+    </ul>
+    <br>
+    
+    <p>
+        <h5><b>CS:GO</b></h5>
+    </p>
+<ul type="circle">
+    <li>Fixed inaccuracies in translation (console)</li><br>
+    <li>cmdrate, updaterate on the client side is now 128 (same as tickrate)</li><br>
+    <li>Fixed an issue with map auto download (Missing Map) — added maps to Steam Workshop</li>
+</ul>
+<br>
+<br>
+<br>
+<hr>
+<font face="arialblack" color="darkblue"> <b>LoL, FIFA, eFootball — great addition to Compete</b></font>
+<pre>6:29 PM – November 2, 2021</pre>
+<br>
+This game needs no introduction — meet League of Legends. Tournaments in the most popular esports discipline in the world are now on Compete. The first tournaments start soon, <a href="https://compete.weplay.tv/league-of-legends-tournaments"><font color="skyblue">join the battle!</font></a>
+<br>
+<br>
+<br>
+<img src="images2/League.png" height="320" width="716">
+<br>
+<br>
+<br>
+Great news for football fans. We added two football simulators in our<a href="https://compete.weplay.tv/weplay-compete-app"><font  color="skyblue"> mobile app</font></a>. Join FIFA and eFootball tournaments, score goals, and become a champion.
+<br>
+<br>
+<br>
+<img src="images2/FIFA.png" height="320" width="716">
+<br>
+<br>
+<br>
+While everyone was watching the first stages of PGL Major, we added some important improvements to our<a href="https://compete.weplay.tv/cs-go-tournaments"><font  color="skyblue">CS:GO tournaments:</font></a>
+<br>
+<br>
+<br>
+<ul>
+    <li>In a 1v1 mode every player gets armor and helmet in the beginning of a round</li><br>
+    <li>Economy for a 2v2 mode is now the same as in 5v5</li><br>
+    <li>All non-standard player models are replaced with the standard ones in the beginning of each round (and during warmup and knife rounds)</li><br>
+    <li>Each map has its own player models</li><br>
+    <li>If the map needed for the match is missing, a client attempts to automatically download it from the server</li><br>
+    <li>The server automatically chooses the player’s side in the match</li><br>
+    <li>Fixed the bug which changed the score during the game</li><br>
+    <li>Если противник покинул сервер в полном составе и не вернулся, спустя некоторое время он автоматически получит техническое поражение</li><br>
+    <li>If your opponents left the server and didn’t come back, they will automatically get a defeat after some time</li><br>
+    <li>If the match is canceled, all the remaining players are kicked from the server</li><br>
+    <li>Added translations of match instructions</li><br>
+    <li>Ping tags now work properly</li><br>
+</ul>
+<br>
+<br>
+<hr />
+<h3><font face="arial black" color="royalblue">Matchmaking is finally here!</font></h3>
+<pre>8:41 PM – September 24, 2021</pre>
+<br>
+Meet the new game mode on <b>Compete – matchmaking.</b> Join ladders, play at any time, and earn points. Finish on top of the ladder to get a prize. It’s available for<b>Dota 2 players</b> in 1v1 mode for now, but we’ll be adding more games and modes, so stay tuned!
+<br>
+<br>
+<br>
+
+<img src="images2/dota-2.png" height="320" width="716">
+<br>
+<br>
+<b>Ready to try?</b><a href="https://compete.weplay.tv/dota-2-ladders " <font color="skyblue">Play in our first ladder.</font></a>
+<br>
+<br>
+<br>
+<font face="arial" color="black">
+<br>
+<hr>
+<br>
+<b>Other updates</b></font>
+<ul>
+    <font face="arial" color="black">
+    <li>We’ve added announcements (you’re reading one right now). You can find out about our newest features and improvements here.</li><br>
+    <li>Fixed wins/losses in the gaming profile</li><br>
+    <li>Fixed map numeration in Bo3 mode</li><br>
+    <li>Fixed the problem when a map is picked by the server and is not displayed later on</li>
+</font>
+</pre>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="info">
+    <button><a href="/pricacy policy.html">PRIVACY&POLICY</a></button>
+    <div class="info2">
+        <button><a href="/Contact.html">CONTACT US</a></button>
+    </div>
+    <div class="info3">
+        <button><a href="/About.html">ABOUT US</a></button>
+    </div>
+
+</div>
+
+</p>
+
+</p>
+
+ </p>
+    </body>
+</html>
